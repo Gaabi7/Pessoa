@@ -34,9 +34,23 @@ public class pessoa {
     public boolean cpfValido() {
         String cpfNumeros = cpf.replaceAll("\\D", "");
 
-        if (cpfNumeros.length() != 11 || cpfNumeros.matches("(\\d)\\1{10}"));
+        if (cpfNumeros.length() != 11 || cpfNumeros.matches("(\\d)\\1{10}"))
         return false;
         
-    }
-    
+        int soma1 = 0, soma2 = 0;
+        for (int i = 0; i < 9; i++) {
+            int num = cpfNumeros.charAt(i) - '0';
+            soma1 += num * (10 - i);
+            soma2 += num * (11 - i);
+        }
+
+        int dig1 = (soma1 * 10) % 11;
+        if (dig1 == 10) dig1 = 0;
+        soma2 += dig1 * 2;
+
+        int dig2 = (soma2 * 10) % 11;
+        if (dig2 == 10) dig2 = 0;
+
+        return dig1 == (cpfNumeros.charAt(9) - '0') && dig2 == (cpfNumeros.charAt(10) - '0');
+    }   
 }

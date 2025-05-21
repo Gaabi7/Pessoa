@@ -3,9 +3,9 @@ public class App {
         pessoa p = new pessoa("Gabriela", 21, "Rua 5", "12345678909");
 
         if (p.cpfValido()) {
-            System.out.println("CPF válido:"); 
+            System.out.println("CPF válido: " + p.getCpf()); 
         } else {
-            System.out.println("Cpf Inválido");
+            System.out.println("Cpf Inválido: " + p.getCpf());
         }
     }
 }
