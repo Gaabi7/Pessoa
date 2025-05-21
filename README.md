@@ -1,4 +1,4 @@
-# Projeto: Validador de CPF em Java
+# Validador de CPF em Java
 Aplicação Java simples que representa uma pessoa e valida o CPF informado utilizando as regras oficiais de cálculo dos dígitos verificadores.
 
 📁 Estrutura
