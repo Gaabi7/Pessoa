@@ -34,6 +34,7 @@ public class pessoa {
     public boolean cpfValido() {
         String cpfNumeros = cpf.replaceAll("\\D", "");
 
+        //Somas para validação
         if (cpfNumeros.length() != 11 || cpfNumeros.matches("(\\d)\\1{10}"))
         return false;
         
