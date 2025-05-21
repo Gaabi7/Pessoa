@@ -1,18 +1,7 @@
-## Getting Started
+# Projeto: Validador de CPF em Java
+Aplicação Java simples que representa uma pessoa e valida o CPF informado utilizando as regras oficiais de cálculo dos dígitos verificadores.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📁 Estrutura
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+App.java: Classe principal com o método main, responsável por criar um objeto Pessoa e exibir se o CPF é válido.
+Pessoa.java: Classe com atributos básicos (nome, idade, endereço e CPF) e método cpfValido() para validação do CPF.
